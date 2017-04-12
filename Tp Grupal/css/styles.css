@@ -1,7 +1,47 @@
-*{margin: 0}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+*{margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
 nav {
 background: #2C3E50;
-
+color: white;
+display: flex;
+flex-direction: row;
+font-size: 40px;
+justify-content: space-between;
+align-content: center;
+}
+.profile {
+  background: #18BC9C;
+  color: white;
+}
+.portfolio {
+  background: white;
 }
 
-font montserrat
+.about {
+  background: #18BC9C;
+  color: white;
+}
+.contact {
+  background: white;
+}
+
+aside {
+  background: #2C3E50;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background: #233140;
+  color: white;
+}
+.copyright {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  align-content: center;
+}
