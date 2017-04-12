@@ -1,42 +1,182 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-*{margin: 0;
-font-family: 'Montserrat', sans-serif;
-}
-nav {
-background: #2C3E50;
-color: white;
-display: flex;
-flex-direction: row;
-font-size: 40px;
-justify-content: space-between;
-align-content: center;
 
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
+nav {
+  background: #2C3E50;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .profile {
   background: #18BC9C;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img{
+  width: 20%;
+  margin: 50px;
+}
+
+.profile h2 {
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.profile p{
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.portfolio {
+  width: 60%;
+  background: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.portfolio .grilla-imagenes{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
-.portfolio {
-  background: white;
+
+.portfolio h2 {
+  color: #2C3E50;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.portfolio img {
+  width: 30%;
+  margin: 10px;
 }
 
 .about {
   background: #18BC9C;
   color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
+
+.about h2 {
+  text-align: center;
+  font-weight: 700;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.about .contenedor-de-columnas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.about .contenedor-de-columnas .columna-1 {
+  width: 30%;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.about .contenedor-de-columnas .columna-2 {
+  width: 30%;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.about .contenedor-de-columnas .columna-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about .contenedor-de-columnas .columna-2 {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact {
   background: white;
 }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background: #2C3E50;
-  color: white;
-  height: 1188px;
+.contact h2{
+  color: #2C3E50;
+  text-align: center;
+  font-weight: 700;
+  padding: 30px;
+}
+
+.informacion {
+    background: #2C3E50;
+    color: white;
+  }
+
+.contenedor-informacion {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.informacion .contenedor-informacion p{
+  font-size: 12px;
+  font-weight: 400;
+  padding: 2px;
+}
+
+.informacion .contenedor-informacion h4{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.color-bootstrap{
+  font-size: 12px;
+  color: #18BC9C;
+}
+
+.location {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+}
+
+.aroundtheweb {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
+}
+
+.aboutfreelancer {
+  width: 25%;
+  text-align: center;
+  padding: 30px;
 }
 
 aside .location,
@@ -52,11 +192,10 @@ footer {
   justify-content: center;
   background: #233140;
   color: white;
-  height: 140px;
 }
+
 .copyright {
   color: white;
-  font-size: 25px;
-
-
+  font-size: 15px;
+  padding: 20px;
 }
