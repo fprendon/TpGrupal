@@ -21,6 +21,13 @@ nav {
   justify-content: space-between;
   align-content: center;
 }
+ nav .nombre{
+  font-size: 26px;
+ }
+
+nav .menu{
+  font-size: 26px;
+ }
 
 .profile {
   background: #18BC9C;
@@ -118,26 +125,33 @@ nav {
 .about .contenedor-de-columnas{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 50px;
 }
 
 
-.contenedor-de-columnas .columna-1 p{
+.about .contenedor-de-columnas .columna-1 p{
   font-weight: 400;
-  font-size: 30px;
-  display: flex;
+  font-size: 20px;
+  margin: 20px;
+
+  padding: 10px;
+  text-align: start;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start;*/
 
 }
 
-.contenedor-de-columnas .columna-2 p{
+.about .contenedor-de-columnas .columna-2 p{
   font-weight: 400;
-  font-size: 30px;
-  display: flex;
+  font-size: 20px;
+  margin: 20px 20px 50px 20px ;
+  padding: 10px;
+  text-align: start;
+  /*display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 
 }
 
@@ -239,6 +253,13 @@ footer {
 /*---------------------------------------------*/
 @media screen and (min-width: 1024px) {
 
+    
+.barraseparadora{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
 
 nav {
   background: #2C3E50;
@@ -377,6 +398,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
 }
@@ -388,6 +410,7 @@ nav {
 }
 
 .informacion .contenedor-informacion h4{
+  font-size: 16px;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -404,13 +427,13 @@ nav {
 }
 
 .aroundtheweb {
-  width: 40%;
+  width: 30%;
   text-align: center;
   padding: 30px;
 }
 
 .aboutfreelancer {
-  width: 25%;
+  width: 40%;
   text-align: center;
   padding: 30px;
 }
