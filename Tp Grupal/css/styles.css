@@ -427,6 +427,15 @@ nav {
   padding: 30px;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  font-size: 15px;
+  column-fill: auto;
+}
+
 .informacion {
     background: #2C3E50;
     color: white;
