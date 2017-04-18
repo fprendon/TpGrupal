@@ -253,13 +253,53 @@ footer {
 /*---------------------------------------------*/
 @media screen and (min-width: 1024px) {
 
-    
+
 .barraseparadora{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-    
+.menu {
+  display: none;
+}
+
+.menu img{
+display: none;
+}
+
+.menualtg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;<
+}
+
+.menualt1 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px
+}
+.menualt2 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px
+}
+.menualt3 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px
+}
 
 nav {
   background: #2C3E50;
@@ -269,7 +309,7 @@ nav {
   display: flex;
   flex-direction: row;
   font-size: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
 }
 
