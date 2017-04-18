@@ -43,7 +43,7 @@ nav .menu{
   padding: 50px;
 }
 
-/*.barraseparadora img{ 
+/*.barraseparadora img{
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ nav .menu{
 
 
 /*---Aplica un resize a todas las barras separadoras---*/
-/*.barraseparadora img{ 
+/*.barraseparadora img{
   width: 60%;
   margin: 20px;
 }*/
@@ -184,25 +184,31 @@ nav .menu{
 }
 
 fieldset {
-  display: flex;
-  flex-direction: column;
-  margin: 50px;
+  display: inline-block;
+  text-align: left;
+  margin: 5px;
   border: none;
+
+
 }
 
 textarea{
   display: block;
-  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   overflow: auto;
   resize: none;
   margin: auto;
+  font-size: 20px;
+  border-left: none;
+  border-right: none;
 
 }
 
 button{
   position: relative;
   float: left;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
   margin-top: 40px;
   margin-left: auto;
@@ -215,6 +221,7 @@ button{
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
+
 }
 
 .informacion {
@@ -491,8 +498,8 @@ nav {
 }
 
 fieldset {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  text-align: left;
   margin: 50px;
   border: none;
 }
@@ -503,6 +510,7 @@ textarea{
   overflow: auto;
   resize: none;
   margin: auto;
+
 
 }
 
