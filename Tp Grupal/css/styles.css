@@ -43,17 +43,21 @@ nav .menu{
   padding: 50px;
 }
 
-.profile .barraseparadora{
+/*.barraseparadora img{ 
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 
-.barraseparadora img{ /*---Aplica un resize a todas las barras separadoras---*/
+
+
+/*---Aplica un resize a todas las barras separadoras---*/
+/*.barraseparadora img{ 
   width: 60%;
   margin: 20px;
-}
+}*/
 
 .profile h2 {
   text-align: center;
@@ -74,6 +78,13 @@ nav .menu{
   margin: 50px;
 }
 
+
+.barraseparadora img{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .portfolio {
   width: 100%;
   background: white;
@@ -83,8 +94,7 @@ nav .menu{
 }
 
 .portfolio .barraseparadora img{
-  width: 70%;
-  margin: 50px;
+  width: 400px;
 }
 
 .portfolio .grilla-imagenes{
@@ -162,7 +172,6 @@ nav .menu{
 
 .contact {
   background: white;
-  height: 1510px;
   text-align: center;
 }
 
@@ -175,12 +184,38 @@ nav .menu{
 }
 
 fieldset {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  margin: 50px;
+  border: none;
 }
 
+textarea{
+  display: block;
+  padding: 10px;
+  overflow: auto;
+  resize: none;
+  margin: auto;
+
+}
+
+button{
+  position: relative;
+  float: left;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  background: #18BC9C;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
 
 .informacion {
     background: #2C3E50;
@@ -229,9 +264,14 @@ fieldset {
   padding: 30px;
 }
 
-.aroundtheweb img {
+/*.aroundtheweb img {
    width: 85%;
    margin: 30px;
+}*/
+
+.ion-ios-plus-outline{
+  font-size: 100px;
+  padding: 3px;
 }
 
 .aboutfreelancer {
@@ -247,7 +287,7 @@ footer {
   justify-content: center;
   background: #233140;
   color: white;
-  height: 140px;
+  /*height: 140px;*/
 }
 
 .copyright {
@@ -263,12 +303,6 @@ footer {
 /*---------------------------------------------*/
 @media screen and (min-width: 1024px) {
 
-
-.barraseparadora{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
 .menu {
   display: none;
 }
@@ -292,6 +326,11 @@ display: none;
   margin-bottom: 10px;
   font-size: 15px
 }
+
+.menualt1:hover{
+  opacity: 0.5;
+}
+
 .menualt2 {
   display: flex;
   flex-direction: row;
@@ -301,6 +340,10 @@ display: none;
   margin-bottom: 10px;
   font-size: 15px
 }
+
+.menualt2:hover{
+  opacity: 0.5;
+}
 .menualt3 {
   display: flex;
   flex-direction: row;
@@ -309,6 +352,10 @@ display: none;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 15px
+}
+
+.menualt3:hover{
+  opacity: 0.5;
 }
 
 nav {
@@ -378,6 +425,12 @@ nav {
   margin: 10px;
 }
 
+.barraseparadora img{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .about {
   background: #18BC9C;
   color: white;
@@ -440,13 +493,41 @@ nav {
 fieldset {
   display: flex;
   flex-direction: column;
+  margin: 50px;
+  border: none;
+}
+
+textarea{
+  display: block;
+  padding: 10px;
+  overflow: auto;
+  resize: none;
+  margin: auto;
+
+}
+
+button{
+  position: relative;
+  float: left;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  background: #18BC9C;
+  color: white;
   font-size: 15px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
 }
 
 .informacion {
     background: #2C3E50;
     color: white;
-    height: 500px;
+    height: 200px;
   }
 
 .contenedor-informacion {
@@ -477,7 +558,7 @@ fieldset {
 }
 
 .location {
-  width: 25%;
+  width: 30%;
   text-align: center;
   padding: 30px;
 }
@@ -488,8 +569,13 @@ fieldset {
   padding: 30px;
 }
 
+.ion-ios-plus-outline{
+  font-size: 40px;
+  padding: 3px;
+}
+
 .aboutfreelancer {
-  width: 40%;
+  width: 30%;
   text-align: center;
   padding: 30px;
 }
