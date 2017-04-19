@@ -15,6 +15,7 @@ header {
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 nav {
@@ -215,21 +216,6 @@ fieldset {
   text-align: left;
   margin: 5px;
   border: none;
-
-
-}
-
-textarea{
-  display: block;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  overflow: auto;
-  resize: none;
-  margin: auto;
-  font-size: 20px;
-  border-left: none;
-  border-right: none;
-
 }
 
 button{
@@ -309,6 +295,23 @@ button{
 .aboutfreelancer {
   text-align: center;
   padding: 30px;
+}
+
+textarea, .formulario input{
+  display: block;
+  padding: 10px;
+  overflow: auto;
+  resize: none;
+  margin: auto;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #999;
+  border-bottom: none;
+}
+
+textarea{
+  border-bottom:  1px solid #999;
 }
 
 footer {
@@ -401,6 +404,10 @@ nav {
   justify-content: space-around;
   align-content: center;
 }
+nav .nombre{
+  display: flex;
+  align-items: center;
+}
 
 .profile {
   background: #18BC9C;
@@ -431,7 +438,7 @@ nav {
 }
 
 .portfolio {
-  width: 60%;
+  max-width: 80%;
   background: white;
   text-align: center;
   margin-left: auto;
@@ -523,21 +530,27 @@ nav {
   padding: 30px;
 }
 
-fieldset {
+.formulario {
   display: inline-block;
   text-align: left;
   margin: 50px;
   border: none;
+  max-width: 700px;
 }
 
-textarea{
+textarea, .formulario input{
   display: block;
   padding: 10px;
   overflow: auto;
   resize: none;
   margin: auto;
-
-
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none
+}
+textarea{
+  border-bottom:  1px solid #999;
 }
 
 button{
@@ -612,7 +625,6 @@ button{
   text-align: center;
   padding: 30px;
 }
-
 
 
 footer {
